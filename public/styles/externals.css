@@ -1,0 +1,22 @@
+iframe:focus { 
+    outline: none;
+  }
+  
+iframe[seamless] { 
+    display: block;
+}
+
+.img1 {
+    width:"150";
+    height:"150";
+}
+
+.img2 {
+    width:"100";
+    height:"220";
+}
+
+.img3 {
+    width:"200";
+    height:"200";
+}

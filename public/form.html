@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey page</title>
+        <link href="./styles/main.css" rel="stylesheet" type="text/css">
+        <link href="./styles/style.css" rel="stylesheet" type="text/css">
+        <link href="./styles/form.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <h1 id="heading1" class="page-header">Queen Tran</h1>
+                <ul id="navigation">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="images.html">Images</a>
+                    </li>
+                    <li class="current">
+                        <a href="form.html">Form</a>
+                    </li>
+                    <li>
+                        <a href="table_and_lists.html">Table and lists</a>
+                    </li>
+                    <li>
+                        <a href="externals.html">Externals</a>
+                    </li>
+                    <li>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h2>The fun survey</h2>
+                <form action="/action_page.php" target="_blank" method="POST">
+                    <fieldset>
+                            First name:<br>
+                            <input type="text" name="firstname" maxlength="10" required>
+                            <br>
+                            Last name:<br>
+                            <input type="text" name="lastname" maxlength="10">
+                    </fieldset>
+                    <fieldset>
+                            <legend>What's your gender?</legend>
+                            <input type="radio" required name="gender" id="male" value="male" checked><label for="male">Male</label>
+                            <input type="radio" required name="gender" id="female" value="female"><label for="female">Female</label>
+                            <input type="radio" required name="gender" id="other" value="other"><label for="other">Other</label>
+                        </fieldset>
+                    <p>
+                        <label for="email">What's your e-mail address?</label>
+                        <input type="email" id="email" name="email">
+                    </p>
+                    <p>
+                        <label>What's your phone number?</label>
+                        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    </p>
+                    <p>
+                        <label for="n1">How old are you?</label>
+                        <input type="number" min="12" max="120" step="1" id="n1" name="age">
+                    </p>
+                    <p> Select your vehicle</p>
+                        <div>
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Car">
+                            <label for="vehicle1">Car</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Bike">
+                            <label for="vehicle2">Car</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Motocycle">
+                            <label for="vehicle3">Car</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="vehicle4" name="vehicle4" value="None">
+                            <label for="vehicle4">Car</label>
+                        </div>           
+                    <p>
+                        <label for="t1">What's your favorite fruit?<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+                        <input type="text" id="t1" name="fruit" list="l1" required
+                            pattern="[Bb]anana|[Cc]herry|[Aa]pple|[Ss]trawberry|[Ll]emon|[Oo]range">
+                        <datalist id="l1">
+                        <option>Banana</option>
+                        <option>Cherry</option>
+                        <option>Apple</option>
+                        <option>Strawberry</option>
+                        <option>Lemon</option>
+                        <option>Orange</option>
+                        </datalist>
+                    </p>
+                    <fieldset>
+                            <legend>Do you play game?<abbr title="This field is mandatory" aria-label="required">*</abbr></legend>
+                            <input type="radio" required name="play_game" id="r1" value="yes"><label for="r1">Yes</label>
+                            <input type="radio" required name="play_game" id="r2" value="no"><label for="r2">No</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Choose your favorite game:</legend>
+                        
+                            <input type="radio" id="minecraft" name="game">
+                            <label for="minecraft">Minecraft</label><br/>
+                        
+                            <input type="radio" id="pokemon" name="game">
+                            <label for="pokemon">Pokemon</label><br/>
+                        
+                            <input type="radio" id="mario" name="game">
+                            <label for="mario">Super Mario</label>
+                    </fieldset>
+                    <p>
+                        <label for="ice-cream-choice">Choose your favorite ice cream:</label>
+                        <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+                        <datalist id="ice-cream-flavors">
+                            <option value="Vanilla"></option>
+                            <option value="Chocolate"></option>
+                            <option value="Coconut"></option>
+                            <option value="Mint"></option>
+                            <option value="Strawberry"></option> 
+                        </datalist>
+                    </p>
+                    <p>
+                        <label for="dino-select">Choose a dinosaur you know:</label>
+                        <select id="dino-select">
+                            <optgroup label="Theropods">
+                                <option>Tyrannosaurus</option>
+                                <option>Velociraptor</option>
+                                <option>Deinonychus</option>
+                            </optgroup>
+                            <optgroup label="Sauropods">
+                                <option>Diplodocus</option>
+                                <option>Saltasaurus</option>
+                                <option>Apatosaurus</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="pet-select">Choose your favorite pet:</label>
+                        <select name="pets" id="pet-select">
+                            <option value="">--Please choose an option--</option>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="hamster">Hamster</option>
+                            <option value="parrot">Parrot</option>
+                            <option value="spider">Spider</option>
+                            <option value="goldfish">Goldfish</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="story">Tell a short story you know:</label>
+                        <textarea id="story" name="story" rows="5" cols="33">
+                            Once upon a time ...
+                        </textarea>
+                    </p>
+                    <p>
+                        Select your favorite image: 
+                        <input type="file" name="img">
+                    </p>
+                    <p>About <meter low="50" high="80" max="100"
+                        value="80">80</meter> percent people like this survey. How about you?
+                    </p>
+                    <p>
+                        <label for="t3">Leave a short message</label>
+                        <textarea id="t3" name="msg" maxlength="140" rows="5"></textarea>
+                    </p>
+                    <p>
+                        Hurray! You're almost done survey. 
+                        <progress value="90" max="100">90 %</progress>
+                    </p>
+                    <p>
+                        Please click to submit the your answer for survey.<br><br>
+                        <button class="submit" type="button">Submit</button>
+                    </p>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <p>My contact:</p>
+                <address>
+                <a href="mailto:qtran@ucsd.edu">Queen Tran</a><br>
+                </address>
+            </div>
+            <div id="connect">
+                <a href="https://freewebsitetemplates.com/go/facebook/" id="facebook" target="_blank">Facebook</a>
+                <a href="https://freewebsitetemplates.com/go/twitter/" id="twitter" target="_blank">Twitter</a>
+                <a href="https://freewebsitetemplates.com/go/googleplus/" id="googleplus" target="_blank">Google&#43;</a>
+                <a href="https://freewebsitetemplates.com/go/pinterest/" id="pinterest" target="_blank">Pinterest</a>
+            </div>
+            <script src="./scripts/main.js"></script>
+        </footer>
+        <!-- Import and configure the Firebase SDK -->
+        <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+        <!-- If you do not want to serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+        <script src="/__/firebase/7.11.0/firebase-app.js"></script>
+        <script src="/__/firebase/7.11.0/firebase-auth.js"></script>
+        <script src="/__/firebase/7.11.0/firebase-storage.js"></script>
+        <script src="/__/firebase/7.11.0/firebase-messaging.js"></script>
+        <script src="/__/firebase/7.11.0/firebase-firestore.js"></script>
+        <script src="/__/firebase/7.11.0/firebase-performance.js"></script>
+        <script src="/__/firebase/init.js"></script>
+    </body>
+</html>
+
+

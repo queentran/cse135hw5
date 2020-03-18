@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My external page</title>
+        <link href="./styles/main.css" rel="stylesheet" type="text/css">
+        <link href="./styles/style.css" rel="stylesheet" type="text/css">
+        <link href="./styles/externals.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <h1 id="heading1" class="page-header">Queen Tran</h1>
+                <ul id="navigation">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="images.html">Images</a>
+                    </li>
+                    <li>
+                        <a href="form.html">Form</a>
+                    </li>
+                    <li>
+                        <a href="table_and_lists.html">Table and lists</a>
+                    </li>
+                    <li class="current">
+                        <a href="externals.html">Externals</a>
+                    </li>
+                    <li>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section>
+                <iframe src="https://www.w3schools.com"></iframe>
+                <iframe src="https://www.w3.org/"></iframe>
+                <video width="320" height="240" controls>
+                    <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+                </video>
+                <img class="img1" src="https://www.fujifilmusa.com/products/digital_cameras/x/fujifilm_x_s1/sample_images/img/index/ff_x_s1_002.JPG" alt="red flower"><br/><br/>
+                <img class="img2" src="https://i.ytimg.com/vi/NlSRMYHUZUs/maxresdefault.jpg" alt="landscape"><br/><br/>
+                <img class="img3" src="https://c1.staticflickr.com/8/7209/7038775987_e01d8c3f7e_n.jpg" alt="tulips"><br/><br/>
+                
+                <p>JavaScript can change the content of an HTML element:</p>
+                <button type="button" onclick="myFunction()">Click Me!</button>
+                <p id="demo">This is a demonstration.</p>
+                <script>
+                    function myFunction() { 
+                        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+                    }
+                </script>
+                <script>
+                    function light(sw) {
+                    var pic;
+                    if (sw == 0) {
+                        pic = "img/pic_bulboff.gif"
+                    } else {
+                        pic = "img/pic_bulbon.gif"
+                    }
+                    document.getElementById('myImage').src = pic;
+                    }
+                </script>
+                
+                <img id="myImage" src="img/pic_bulboff.gif" alt="bulb off" width="100" height="180">  
+                <p>
+                    <button type="button" onclick="light(1)">Light On</button>
+                    <button type="button" onclick="light(0)">Light Off</button>
+                </p>
+                <link rel="stylesheet" href="new_style.css">
+                <h1>Sample heading 1</h1>
+                <h2>Sample heading 2</h2>
+
+                <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit W3Schools HTML Tutorial</a>
+                <br/>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" title="HTML: Hypertext Markup Language">Visit Mozilla Tutoria of HTML</a>
+                <br/>
+                <a href="https://www.w3schools.com/html/html_links.asp" title="HTML Links">Visit HTML Links</a>
+                <br/>
+                <a href="https://www.w3schools.com/html/html_css.asp" title="HTML Styles - CSS">HTML Styles - CSS</a>
+                <br/>
+                <a href="https://www.w3schools.com/js/default.asp" title="JavaScript Tutorial">JavaScript Tutorial</a>
+
+                <p>
+                    <link rel="stylesheet" href="font.css">
+                </p>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <p>My contact:</p>
+                <address>
+                <a href="mailto:qtran@ucsd.edu">Queen Tran</a><br>
+                </address>
+            </div>
+            <div id="connect">
+                <a href="https://freewebsitetemplates.com/go/facebook/" id="facebook" target="_blank">Facebook</a>
+                <a href="https://freewebsitetemplates.com/go/twitter/" id="twitter" target="_blank">Twitter</a>
+                <a href="https://freewebsitetemplates.com/go/googleplus/" id="googleplus" target="_blank">Google&#43;</a>
+                <a href="https://freewebsitetemplates.com/go/pinterest/" id="pinterest" target="_blank">Pinterest</a>
+            </div>
+            <script src="scripts/main.js"></script>
+        </footer>
+        <!-- Import and configure the Firebase SDK -->
+        <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+        <!-- If you do not want to serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+        <script src="/__/firebase/7.11.0/firebase-app.js"></script>
+        <script src="/__/firebase/7.11.0/firebase-auth.js"></script>
+        <script src="/__/firebase/7.11.0/firebase-storage.js"></script>
+        <script src="/__/firebase/7.11.0/firebase-messaging.js"></script>
+        <script src="/__/firebase/7.11.0/firebase-firestore.js"></script>
+        <script src="/__/firebase/7.11.0/firebase-performance.js"></script>
+        <script src="/__/firebase/init.js"></script>
+    </body>
+</html>

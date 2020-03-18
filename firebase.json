@@ -1,0 +1,16 @@
+{
+  "emulators": {
+    "hosting": {
+      "port": 5000
+    }
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "hosting": {
+    "public": "./public"
+  }
+}

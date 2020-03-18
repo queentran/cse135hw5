@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My images</title>
+        <link href="./styles/main.css" rel="stylesheet" type="text/css">
+        <link href="./styles/style.css" rel="stylesheet" type="text/css">
+        <link href="./styles/img.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <h1 id="heading1" class="page-header">Queen Tran</h1>
+                <ul id="navigation">
+                    <li >
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="current">
+                        <a href="images.html">Images</a>
+                    </li>
+                    <li>
+                        <a href="form.html">Form</a>
+                    </li>
+                    <li>
+                        <a href="table_and_lists.html">Table and lists</a>
+                    </li>
+                    <li>
+                        <a href="externals.html">Externals</a>
+                    </li>
+                    <li>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section id="body">
+                <h1>My favorite pictures</h1>
+                <img class="gif" src="./images/html5.gif" alt="HTML5 Icon"><br/>
+                <img class="animated_gif" src="./images/pink_animated.gif" alt="animated pink flowers"><br/>
+                <img class="jpg" src="./images/white_roses.jpg" alt="white roses"><br/>
+                <img class="png" src="./images/marioignpng.png" alt="super mario"><br/>
+                <img class="animated_png" src="./images/dora_animated.png" alt="animated dora"><br/>
+
+                <picture>
+                    <source media="(min-width: 650px)" srcset="./images/img_pink_flowers.jpg">
+                    <source media="(min-width: 465px)" srcset="./images/img_white_flower.jpg">
+                    <img src="./images/white_roses.jpg" alt="Flowers" style="width:auto;">
+                </picture>
+
+                <svg height="130" width="500">
+                    <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                    </linearGradient>
+                    </defs>
+                    <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+                    <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+                </svg>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <p>My contact:</p>
+                <address>
+                <a href="mailto:qtran@ucsd.edu">Queen Tran</a><br>
+                </address>
+            </div>
+            <div id="connect">
+                <a href="https://freewebsitetemplates.com/go/facebook/" id="facebook" target="_blank">Facebook</a>
+                <a href="https://freewebsitetemplates.com/go/twitter/" id="twitter" target="_blank">Twitter</a>
+                <a href="https://freewebsitetemplates.com/go/googleplus/" id="googleplus" target="_blank">Google&#43;</a>
+                <a href="https://freewebsitetemplates.com/go/pinterest/" id="pinterest" target="_blank">Pinterest</a>
+            </div>
+            <script src="scripts/main.js"></script>
+        </footer>
+        <!-- Import and configure the Firebase SDK -->
+        <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+        <!-- If you do not want to serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+        <script src="/__/firebase/7.11.0/firebase-app.js"></script>
+        <script src="/__/firebase/7.11.0/firebase-auth.js"></script>
+        <script src="/__/firebase/7.11.0/firebase-storage.js"></script>
+        <script src="/__/firebase/7.11.0/firebase-messaging.js"></script>
+        <script src="/__/firebase/7.11.0/firebase-firestore.js"></script>
+        <script src="/__/firebase/7.11.0/firebase-performance.js"></script>
+        <script src="/__/firebase/init.js"></script>
+    </body>
+</html>

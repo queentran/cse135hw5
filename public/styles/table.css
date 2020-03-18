@@ -1,0 +1,120 @@
+#class_schedule {
+    clear: both;
+}
+
+#class_schedule h3 {
+    background:transparent;
+    font-size:20px;
+    color:#003366;
+}
+
+#class_schedule .cs_box_content {
+    padding-top:0;
+}
+
+#class_schedule h2, caption {
+    color: rgb(0, 37, 204);
+}
+
+#class_schedule .notEnrolled {
+    padding-top:0; 
+    font-size:16px;
+    padding-bottom: 10px; 
+    padding-left: 20px;
+}
+
+#class_schedule .cs_box_content table {
+    width:100%;
+    border: 2px solid rgb(100, 100, 100);
+}
+
+#class_schedule .cs_box_content table td,th {
+    border: 1px solid rgb(100, 100, 100);
+}
+
+#class_schedule .cs_box_content table th {
+    padding:2px;
+    font: 17px/22px 'Helvetica', Arial, sans-serif;
+    color:#3191ad;
+    width:14.25%;
+}
+
+#class_schedule .cs_box_content table th span.class_group_4 {
+    display:block;
+    padding:4px;
+    color:#fff;
+    font-size:95%;
+}
+
+#class_schedule .cs_box_content table td {
+    padding:2px;
+}
+
+#class_schedule .cs_box_content table td span.class {
+    display:block;
+    padding:4px;
+    color:#fff;
+    font-size:95%;
+}
+	span.class_group_0 {
+        background:#2B5A88;
+    }
+	span.class_group_1 {
+        background:#E6BC2E;
+    }
+	span.class_group_2 {
+        background:#0A8DAD;
+    }
+	span.class_group_3 {
+        background:#081933;
+    }
+	span.class_group_4 {
+        background:#986828;
+    }
+	span.class_group_5 {
+        background:#1c3664;
+    }
+	span.class_group_6 {
+        background:#BF9D2F;
+    }
+	span.class_group_7 {
+        background:#4EA1AF;
+    }
+	span.class_group_8 {
+        background:#0A4D84;
+    }
+    span.class_group_9 {
+        background:#0A7DAB;
+    }
+
+    span.class_group_10 {
+        background:rgb(248, 2, 2);
+    }
+    
+#class_schedule .cs_box_header a {
+    color:#0066CC;
+}
+
+#class_schedule .cs_box_content table td span.class_group_waitlist {
+    display:block;
+    padding:4px;color:#000000;
+    font-size:95%;
+}
+
+#unordered_list {
+    font: 1rem 'Fira Sans', sans-serif;
+    color: rgb(0, 37, 204);
+    margin-bottom: .5rem;
+}
+
+#ordered_list {
+    font: 1rem 'Fira Sans', sans-serif;
+    color: rgb(0, 204, 204);
+    margin-bottom: .5rem;
+}
+
+#description_list {
+    font: 1rem 'Fira Sans', sans-serif;
+    color: rgb(204, 0, 177);
+    margin-bottom: .5rem;
+}

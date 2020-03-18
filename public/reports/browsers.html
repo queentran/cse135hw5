@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Performance page</title>
+        <link href="./../styles/style.css" rel="stylesheet" type="text/css">
+        <!-- Disable tap highlight on IE -->
+        <meta name="msapplication-tap-highlight" content="no">
+
+        <!-- Web Application Manifest -->
+        <link rel="manifest" href="manifest.json">
+
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="Friendly Chat">
+        <meta name="theme-color" content="#303F9F">
+
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-title" content="Friendly Chat">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
+
+        <!-- Tile icon for Win8 -->
+        <meta name="msapplication-TileColor" content="#3372DF">
+        <meta name="msapplication-navbutton-color" content="#303F9F">
+
+        <!-- Material Design Lite -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+        <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+        <!-- App Styling -->
+        <!-- TODO: Mark the starting of `timer` for loading App Styling script. -->
+        <script type="text/javascript">performance && performance.mark('loadStylingStart');</script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+        <link rel="stylesheet" href="styles/dashboard.css">
+        <!-- TODO: Mark the ending of `timer` for loading App Styling script. Measure the duration from starting to ending. -->
+        <script type="text/javascript">
+            performance && performance.mark('loadStylingEnd');
+            performance && performance.measure('loadStyling', 'loadStylingStart', 'loadStylingEnd');
+        </script>
+
+        <!-- TODO: Enable First Input Delay polyfill library. -->
+        <script type="text/javascript">
+            !function(n,e){var t,o,i,c=[],f={passive:!0,capture:!0},r=new Date,a="pointerup",u="pointercancel";function p(n,c){t||(t=c,o=n,i=new Date,w(e),s())}function s(){o>=0&&o<i-r&&(c.forEach(function(n){n(o,t)}),c=[])}function l(t){if(t.cancelable){var o=(t.timeStamp>1e12?new Date:performance.now())-t.timeStamp;"pointerdown"==t.type?function(t,o){function i(){p(t,o),r()}function c(){r()}function r(){e(a,i,f),e(u,c,f)}n(a,i,f),n(u,c,f)}(o,t):p(o,t)}}function w(n){["click","mousedown","keydown","touchstart","pointerdown"].forEach(function(e){n(e,l,f)})}w(n),self.perfMetrics=self.perfMetrics||{},self.perfMetrics.onFirstInputDelay=function(n){c.push(n),s()}}(addEventListener,removeEventListener);
+        </script>
+    </head>
+    <body>
+        <header>
+            <div  id="header">
+                <ul id="navigation">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="images.html">Images</a>
+                    </li>
+                    <li>
+                        <a href="form.html">Form</a>
+                    </li>
+                    <li>
+                        <a href="table_and_lists.html">Table and lists</a>
+                    </li>
+                    <li>
+                        <a href="externals.html">Externals</a>
+                    </li>
+                    <li>
+                        <a href="/dashboard.html">DashBoard</a>
+                    </li>
+                    <li>
+                        <a href="/reports/speed.html">Performance Info</a>
+                    </li>
+                    <li class="current">
+                        <a href="/reports/browsers.html">Browser Info</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section id="dataGrid" style="width:100%; height:400px;">                 
+                <script src="https://cdn.zinggrid.com/zinggrid.min.js" defer></script>   
+                <zing-grid 
+                    caption="Broswer Data"
+                    sort
+                    search
+                    pager
+                    page-size="3"
+                    page-size-options="2,3,6"
+                    layout="row"
+                    viewport-stop
+                    data='[
+                        {
+                            "Browser": "Edge",
+                            "Company": "Microsoft",
+                            "OS": "Android, iOS, macOS, Windows, Xbox One"
+                        },
+                        {
+                            "Browser": "Internet Explorer",
+                            "Company": "Microsoft",
+                            "OS": "Windows"
+                        },
+                        {
+                            "Browser": "Chrome",
+                            "Company": "Google",
+                            "OS": "Android, Chrome OS, iOS, Linux, macOS, Windows"
+                        },
+                        {
+                            "Browser": "Firefox",
+                            "Company": "Mozilla",
+                            "OS": "Android, iOS, Linux, macOS, Windows"
+                        },
+                        {
+                            "Browser": "Safari",
+                            "Company": "Apple",
+                            "OS": "iOS, macOS"
+                        }
+                    ]'>
+                </zing-grid>      
+            </section>
+        </main>
+        <footer>
+            <div>
+                <p>My contact:</p>
+                <address>
+                    <a href="mailto:qtran@ucsd.edu">Queen Tran</a><br>
+                </address>
+            </div>
+            <div id="connect">
+                <a href="https://freewebsitetemplates.com/go/facebook/" id="facebook" target="_blank">Facebook</a>
+                <a href="https://freewebsitetemplates.com/go/twitter/" id="twitter" target="_blank">Twitter</a>
+                <a href="https://freewebsitetemplates.com/go/googleplus/" id="googleplus" target="_blank">Google&#43;</a>
+                <a href="https://freewebsitetemplates.com/go/pinterest/" id="pinterest" target="_blank">Pinterest</a>
+            </div>
+            
+        </footer>
+        <!-- Import and configure the Firebase SDK -->
+            <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+            <!-- If you do not want to serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+            <script src="/__/firebase/7.11.0/firebase-app.js"></script>
+            <script src="/__/firebase/7.11.0/firebase-auth.js"></script>
+            <script src="/__/firebase/7.11.0/firebase-storage.js"></script>
+            <script src="/__/firebase/7.11.0/firebase-messaging.js"></script>
+            <script src="/__/firebase/7.11.0/firebase-firestore.js"></script>
+            <script src="/__/firebase/7.11.0/firebase-performance.js"></script>
+            <script src="/__/firebase/init.js"></script>
+
+            <script src="scripts/main.js"></script>
+    </body>
+</html>
